@@ -286,7 +286,7 @@ func (r *BulkHTTPRequest) fillRequest(req *http.Request, values map[string]inter
 		req.Body = ioutil.NopCloser(strings.NewReader(r.Body))
 	}
 
-	setHeader(req, "User-Agent", "Nuclei - Open-source project (github.com/projectdiscovery/nuclei)")
+	setHeader(req, "User-Agent", "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:83.0) Gecko/20100101 Firefox/83.0")
 
 	// raw requests are left untouched
 	if len(r.Raw) > 0 {
